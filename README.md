@@ -1,3 +1,15 @@
+# Command Usage
+
+```
+/snapshot range="0-11|12-17|18-21|22-41|42-45" padding="5px 10px" scale=2
+/snapshot range=0-11
+/snapshot range=11
+```
+
+![preview](https://i.imgur.com/Qq4UUd1.png)
+
+<details><summary><strong>Unmodified README from STExtension-Snapshot</strong></summary>
+
 # STExtension-Snapshot
 Takes a snapshot of the current chat and makes an image of it for easy sharing.
 All styling is respected, and the width of the messages is decided by your chat width, for narrower/longer message blocks in the resulting image, turn up or down your chat width! 
@@ -44,3 +56,5 @@ Thanks to html2canvas.
 Fuck dom-to-image-more.
 
 My soundtrack while making this: https://youtu.be/4koCpY4iYhI?si=1jbAnNNJeY3_ZP6E
+
+</details>
