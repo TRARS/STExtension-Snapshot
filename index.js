@@ -216,16 +216,18 @@ async function openSnapshotMenu() {
         </div>
 
         <h5>- Optional - </h5>
-        <div width: 70%;">
-          <div style="background-color: rgba(0, 0, 0, 0.25); border-radius: 4px; padding: 8px; width: 100%;">
+        <div style="width: ${useMobileMode ? '100%' : 'auto'};">
+          <div style="background-color: rgba(0, 0, 0, 0.25); border-radius: 4px; padding: ${useMobileMode ? '0px' : '8px'};">
             <div style="display: flex; align-items: center; justify-content: space-between; margin: 0px 4px;">
               <label for="message_range_input" style="white-space: nowrap; flex-shrink: 0;">Specify Range:</label>
-              <input type="text" id="message_range_input" class="snapshot-range-input" placeholder="e.g., 0-9|10-19|20" style="margin-left: 5px; flex-grow: 1;">
+              <input type="text" id="message_range_input" class="snapshot-range-input" placeholder="e.g., 0-9|10-19|20" 
+                     style="margin-left: 5px; flex-grow: 1; width: ${useMobileMode ? '50%' : 'auto'};">
             </div>
 
             <div style="display: flex; align-items: center; justify-content: space-between; margin: 0px 4px;">
               <label for="gridDiv_padding" style="white-space: nowrap; flex-shrink: 0;">Grid Padding:</label>
-              <input type="text" id="gridDiv_padding" class="snapshot-range-input" placeholder="e.g., 5px" style="margin-left: 5px; flex-grow: 1;">
+              <input type="text" id="gridDiv_padding" class="snapshot-range-input" placeholder="e.g., 5px" 
+                     style="margin-left: 5px; flex-grow: 1; width: ${useMobileMode ? '50%' : 'auto'};">
             </div>
 
             <div style="display: flex; align-items: center; justify-content: space-between; margin: 0px 4px;">
