@@ -127,6 +127,11 @@ async function captureChatLog(format = 'regular', messageRange = null, anonymize
             return clone;
         });
 
+        // Set margin to 0px for the last element if messageElements is not empty
+        if (messageElements.length > 0) {
+            messageElements[messageElements.length - 1].style.margin = '0px';
+        }
+
         messageElements.forEach(el => gridDiv.appendChild(el));
 
         containerDiv.appendChild(gridDiv);
